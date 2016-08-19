@@ -4,7 +4,7 @@
  *
  * Created on August 19, 2016, 10:41 AM
  */
-
+//Management module! 
 #include "controller.h"
 
 int main() {
@@ -27,4 +27,3 @@ int main() {
     //pthread_exit (NULL); 
     
 }
-//COMMENT
