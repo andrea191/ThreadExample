@@ -8,7 +8,7 @@
 #include "controller.h"
 
 int main() {
-    pthread_t thr_redundancy, thr_sensor;
+    
     printf("\nThe value of count is: %d", count);
     printf("\nCreating thread SensorManagement\n");
     pthread_create (&thr_sensor, NULL, SensorManagement, (void *) 1);

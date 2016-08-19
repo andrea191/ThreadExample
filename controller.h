@@ -5,12 +5,13 @@
  * Created on August 19, 2016, 10:41 AM
  */
 
-#include <pthread.h>
-#include <stdio.h>
-#include <semaphore.h>
+#include "NeededLibraries.h"
 
 int count=0;
 sem_t active, available;
+
+pthread_t thr_redundancy, thr_sensor;
+
 
 void *SensorManagement(void *threadid);
 void *RedundancyManagement(void *threadid);
